@@ -1,0 +1,35 @@
+﻿body {
+	overflow-y: auto;
+	padding-left: 10%;
+	padding-top: 10%;
+	width: 90%;
+	height: 85;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
+
+input[type=range] {
+	width:80%
+}
+.primes-list {
+	float:left;
+	padding: 0.5%;
+	background-color: #414141;
+	margin-left:0.5%;
+}
+#free-workers {
+	font-weight: bold;
+}
+#data-container {
+	width: 80%;
+}

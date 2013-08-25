@@ -1,0 +1,13 @@
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\AsyncProgramming\PrimeNumbersCalculator\bin\Debug\resources.pri
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\AsyncProgramming\PrimeNumbersCalculator\bin\Debug\AppxManifest.xml
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\AsyncProgramming\PrimeNumbersCalculator\bin\Debug\PrimeNumbersCalculator.build.appxrecipe
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\AsyncProgramming\PrimeNumbersCalculator\bld\Debug\priconfig.xml
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\AsyncProgramming\PrimeNumbersCalculator\bld\Debug\layout.resfiles
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\AsyncProgramming\PrimeNumbersCalculator\bld\Debug\resources.resfiles
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\AsyncProgramming\PrimeNumbersCalculator\bld\Debug\pri.resfiles
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\AsyncProgramming\PrimeNumbersCalculator\bld\Debug\LanguageQualifiers.txt
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\AsyncProgramming\PrimeNumbersCalculator\bld\Debug\ProjectArchitectures.txt
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\AsyncProgramming\PrimeNumbersCalculator\bld\Debug\priconfig.xml.intermediate
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\AsyncProgramming\PrimeNumbersCalculator\bld\Debug\layout.resfiles.intermediate
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\AsyncProgramming\PrimeNumbersCalculator\bld\Debug\resources.resfiles.intermediate
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\AsyncProgramming\PrimeNumbersCalculator\bld\Debug\pri.resfiles.intermediate

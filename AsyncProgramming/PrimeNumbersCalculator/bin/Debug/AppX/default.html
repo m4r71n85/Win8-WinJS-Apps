@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PrimeNumbersCalculator</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- PrimeNumbersCalculator references -->
+    <link href="/css/default.css" rel="stylesheet" />
+	<script src="/js/workersController.js"></script>
+    <script src="/js/default.js"></script>
+</head>
+<body id="main-container">
+	<label for="range-from">from <span id="label-from"></span></label><br />
+	<input type="range" min="0" max="30000" step="1" value="0" id="range-from"/><br />
+	<label for="range-to">to <span id="label-to"></span></label><br />
+	<input type="range" min="0" max="30000" step="1" value="1000" id="range-to"/><br />
+	<button id="find-primes">Find primes</button>
+	<span id="message">Currently <span id="free-workers">3</span> workers are free</span>
+	<div id="data-container">
+<!--		<div id="primes-col-0" class="primes-list">Worker 1</div>
+		<div id="primes-col-1" class="primes-list">Worker 2</div>
+		<div id="primes-col-2" class="primes-list">Worker 3</div>-->
+	</div>
+</body>
+</html>
