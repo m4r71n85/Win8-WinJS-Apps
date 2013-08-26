@@ -25,14 +25,11 @@
 #output-container {
 	overflow-y: auto;
 	background: black;
-	height: 35%;
+	height: 40%;
 	margin-top:5%;
 }
 .options-controls {
 	margin: 7% 0;
-}
-.interval-block {
-	margin: 5% 0;
 }
 .time-picker {
 	display: none;

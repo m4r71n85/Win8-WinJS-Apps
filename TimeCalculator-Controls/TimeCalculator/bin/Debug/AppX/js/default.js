@@ -13,13 +13,15 @@
     	args.setPromise(WinJS.UI.processAll());
     	// Initialize variables.
     	var calculateButton = document.getElementById("btn-calculate");
-    	var confirmButton = document.getElementById("confirmButton");
-    	var confirmFlyout = document.getElementById("confirmFlyout");
     	var toggleSwitch = document.getElementById("time-toggle");
     	var timePickers = document.getElementsByClassName("time-picker");
     	var header = document.getElementById("picker-header");
     	var outputContainer = document.getElementById("output-container");
-    	var toggleState = null;
+    	var menu = document.getElementById("menu-id").winControl;
+    	var menuDays = document.getElementById("days");
+    	var menuHours = document.getElementById("hours");
+    	var menuBoth = document.getElementById("both");
+		var calcTimeSwitcher = null;
     	var intervalMode = null;
     	var fromDate = null;
     	var toDate = null;
@@ -28,35 +30,37 @@
 
     	// Initialize event listeners.
     	calculateButton.addEventListener("click", function () {
-    		confirmFlyout.winControl.show(calculateButton, "top");
+    		menu.show();
     	}, false);
 
-    	confirmButton.addEventListener("click", function () {
-    		updateIntervalValues();
-    		var dateTime = {};
-    		dateTime.from = fromDate;
-    		dateTime.to = toDate;
-    		if (toggleState == true) {
-    			dateTime = mergeDateAndTimePickerValues(dateTime);
-    		}
-    		var intervals = calculateInterval(dateTime.from, dateTime.to)
-    		renderResult(intervals);
-    		confirmFlyout.winControl.hide();
-		}, false);
+    	menuDays.addEventListener("click", function () {
+    		prepareCalculation("days");
+    	});
+
+    	menuHours.addEventListener("click", function () {
+    		prepareCalculation("hours");
+    	});
+
+    	menuBoth.addEventListener("click", function () {
+    		prepareCalculation("both");
+    	});
 
 		toggleSwitch.addEventListener("change", function () {
-			toggleState = toggleSwitch.winControl.checked;
+			calcTimeSwitcher = toggleSwitch.winControl.checked;
 			var display = "none";
 			var headerText = "Date";
-
-			if (toggleState == true) {
+			var containerHeight = "40%";
+			if (calcTimeSwitcher == true) {
 				headerText = "Date/time";
 				display = "block";
+				containerHeight = "27%";
 			}
 			header.innerText = headerText;
+			outputContainer.style.height = containerHeight;
 			for (var i = 0; i < timePickers.length; i++) {
 				timePickers[i].style.display = display;
 			}
+			outputContainer.scrollTop = outputContainer.scrollHeight;
 		}, false);
 
     	// Initialize functions listeners.
@@ -66,6 +70,18 @@
 			fromTime = document.getElementById("time-from").winControl.current; // Note that the date value is always July 15, 2011.
 			toTime = document.getElementById("time-to").winControl.current;	// Note that the date value is always July 15, 2011.
 		}
+
+		function prepareCalculation(intervalMode) {
+			updateIntervalValues();
+			var dateTime = {};
+			dateTime.from = fromDate;
+			dateTime.to = toDate;
+			if (calcTimeSwitcher == true) {
+				dateTime = mergeDateAndTimePickerValues(dateTime);
+			}
+			var intervals = calculateInterval(dateTime.from, dateTime.to)
+			renderResult(intervalMode, intervals);
+		};
 
 		function calculateInterval(fromDateTime, toDateTime) {
 			var result = {};
@@ -84,21 +100,29 @@
 			return result;
 		}
 
-		function renderResult(intervals) {
-			intervalMode = confirmFlyout.querySelector("select").value;
+		function renderResult(intervalMode, intervals) {
+			
 			var fromDateStr = fromDate.getDate() + "/" + fromDate.getMonth() + "/" + fromDate.getFullYear()
 			var toDateStr = toDate.getDate() + "/" + toDate.getMonth() + "/" + toDate.getFullYear();
-			var fromTimeStr = fromTime.getHours() + ":" + fromTime.getMinutes();
-			var toTimeStr = toTime.getHours() + ":" + toTime.getMinutes();
+			var fromTimeStr = " "+fromTime.getHours() + ":" + fromTime.getMinutes();
+			var toTimeStr = " "+toTime.getHours() + ":" + toTime.getMinutes();
 			var paragraph = document.createElement("p");
 			var content = "";
-			content = "From [" + fromDateStr + "] to [" + toDateStr + "] is: " + intervals.days + " days.";
+			calcTimeSwitcher = toggleSwitch.winControl.checked
+			if (calcTimeSwitcher == false) {
+				toTimeStr = "";
+				fromTimeStr = "";
+			}
+			var toDateTime = toDateStr + toTimeStr
+			var fromDateTime = fromDateStr + fromTimeStr
+			content = "From [" + fromDateTime + "] to [" + toDateTime + "] is: " + intervals.days + " days.";
 			switch (intervalMode) {
 				case "hours":
-					content = "From [" + fromDateStr +" "+ fromTimeStr + "] to [" + toDateStr + toTimeStr + "] is: " + intervals.hours + " hours.";
+					content = "From [" + fromDateTime + "] to [" + toDateTime + "] is: " + intervals.hours + " hours.";
 					break;
 				case "both":
-					content += "From [" + fromDateStr + " " + fromTimeStr + "] to [" + toDateStr + toTimeStr + "] is: " + intervals.hours + " hours.";
+					
+					content += "<br/> From [" + fromDateTime + "] to [" + toDateTime + "] is: " + intervals.hours + " hours.";
 					break;
 			}
 			paragraph.innerHTML = content;

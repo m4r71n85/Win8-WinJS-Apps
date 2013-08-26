@@ -22,7 +22,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\TimeCalculator-Controls\TimeCalculator\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2013-08-26T11:20:54.427</Modified>
+      <Modified>2013-08-26T14:48:55.975</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\TimeCalculator-Controls\TimeCalculator\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
@@ -46,11 +46,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\TimeCalculator-Controls\TimeCalculator\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-08-26T12:17:42.337</Modified>
+      <Modified>2013-08-26T14:54:23.309</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\TimeCalculator-Controls\TimeCalculator\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2013-08-26T00:28:20.013</Modified>
+      <Modified>2013-08-26T14:46:23.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\TimeCalculator-Controls\TimeCalculator\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

@@ -36,6 +36,11 @@
 		<div id="submit-controls">
 			<button id="btn-calculate">Calculate time interval</button>
 			<!-- Confirmation Calculation. -->
+			<div id="menu-id" data-win-control="WinJS.UI.Menu" data-win-options="{anchor: 'btn-calculate', placement: 'bottom'}">
+				<button data-win-control="WinJS.UI.MenuCommand" data-win-options="{id: 'days', label: 'In Days'}"></button>
+				<button data-win-control="WinJS.UI.MenuCommand" data-win-options="{id:'hours', label: 'In Hours'}"></button>
+				<button data-win-control="WinJS.UI.MenuCommand" data-win-options="{id:'both', label: 'In Days and Hours'}"></button>
+			</div>
 			<div id="confirmFlyout" data-win-control="WinJS.UI.Flyout" aria-label="{Confirm calculation flyout}">
 				<select>
 					<option value="days">Calculate days</option>
