@@ -1,0 +1,9 @@
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\TimeCalculator-Controls\TimeCalculator\bin\Debug\resources.pri
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\TimeCalculator-Controls\TimeCalculator\bin\Debug\AppxManifest.xml
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\TimeCalculator-Controls\TimeCalculator\bin\Debug\TimeCalculator.build.appxrecipe
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\TimeCalculator-Controls\TimeCalculator\bld\Debug\priconfig.xml
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\TimeCalculator-Controls\TimeCalculator\bld\Debug\layout.resfiles
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\TimeCalculator-Controls\TimeCalculator\bld\Debug\resources.resfiles
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\TimeCalculator-Controls\TimeCalculator\bld\Debug\pri.resfiles
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\TimeCalculator-Controls\TimeCalculator\bld\Debug\LanguageQualifiers.txt
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\TimeCalculator-Controls\TimeCalculator\bld\Debug\ProjectArchitectures.txt

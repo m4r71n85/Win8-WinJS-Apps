@@ -1,0 +1,39 @@
+﻿body {
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
+#container {
+	width: 320px;
+	background: gray;
+	padding: 5px;
+	margin:0 auto;
+	height: 100%;
+}
+#submit-controls {
+	text-align: center;
+}
+#output-container {
+	overflow-y: auto;
+	background: black;
+	height: 35%;
+	margin-top:5%;
+}
+.options-controls {
+	margin: 7% 0;
+}
+.interval-block {
+	margin: 5% 0;
+}
+.time-picker {
+	display: none;
+}

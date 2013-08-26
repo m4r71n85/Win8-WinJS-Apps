@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Duration Calculator</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- TimeCalculator references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+	<div id="container">
+		<h1>Duration Calculator</h1>
+			<div id="time-toggle" data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{
+				title: 'show time'
+			}"></div>
+		<div class="options-controls">
+			<h2 id="picker-header">Date</h2>
+			<div class="interval-block">
+				<label for="date-form">from</label><br />
+				<div id="date-from" data-win-control="WinJS.UI.DatePicker"></div><br />
+				<div id="time-from" class="time-picker" data-win-control="WinJS.UI.TimePicker"></div><br />
+			</div>
+			<div class="interval-block">
+				<label for="date-to">to</label><br />
+				<div id="date-to" data-win-control="WinJS.UI.DatePicker"></div>
+				<div id="time-to" class="time-picker" data-win-control="WinJS.UI.TimePicker"></div><br />
+			</div>
+		</div>
+		
+		<div id="submit-controls">
+			<button id="btn-calculate">Calculate time interval</button>
+			<!-- Confirmation Calculation. -->
+			<div id="confirmFlyout" data-win-control="WinJS.UI.Flyout" aria-label="{Confirm calculation flyout}">
+				<select>
+					<option value="days">Calculate days</option>
+					<option value="hours">Calculate hours</option>
+					<option value="both">Calculate days and hours</option>
+				</select><br />
+				<button id="confirmButton">Complete Order</button>
+			</div>
+		</div>
+		<div id="output-container">
+		</div>
+	</div>
+</body>
+</html>
