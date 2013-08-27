@@ -1,0 +1,27 @@
+﻿body {
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
+#video-player {
+	width:80%;
+	height: 100%;
+	min-width: 320px;
+}
+#playlist-container {
+	float:right;
+	width: 20%;
+	height: 100%;
+}
+.playing {
+	color: green;
+}
