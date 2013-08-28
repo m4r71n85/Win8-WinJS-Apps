@@ -1,0 +1,13 @@
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\PoemEditor\PoemEditor\bin\Debug\resources.pri
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\PoemEditor\PoemEditor\bin\Debug\AppxManifest.xml
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\PoemEditor\PoemEditor\bin\Debug\PoemEditor.build.appxrecipe
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\PoemEditor\PoemEditor\bld\Debug\priconfig.xml.intermediate
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\PoemEditor\PoemEditor\bld\Debug\layout.resfiles.intermediate
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\PoemEditor\PoemEditor\bld\Debug\resources.resfiles.intermediate
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\PoemEditor\PoemEditor\bld\Debug\pri.resfiles.intermediate
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\PoemEditor\PoemEditor\bld\Debug\priconfig.xml
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\PoemEditor\PoemEditor\bld\Debug\layout.resfiles
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\PoemEditor\PoemEditor\bld\Debug\resources.resfiles
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\PoemEditor\PoemEditor\bld\Debug\pri.resfiles
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\PoemEditor\PoemEditor\bld\Debug\LanguageQualifiers.txt
+C:\Users\marti_000\Documents\Visual Studio 2012\Projects\Win8Apps\PoemEditor\PoemEditor\bld\Debug\ProjectArchitectures.txt

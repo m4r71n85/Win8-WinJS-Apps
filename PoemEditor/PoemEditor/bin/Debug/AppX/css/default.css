@@ -1,0 +1,32 @@
+﻿body {
+	overflow-y: auto;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
+#verses-text {
+	height: 300px;
+}
+#poem {
+	background-color: black;
+	width: 280px;
+	text-align: center;
+}
+.verse, .line {
+	display: block;
+}
+.verse {
+	margin-bottom: 7px;
+}
+#flyout-buttons {
+	text-align: center;
+}

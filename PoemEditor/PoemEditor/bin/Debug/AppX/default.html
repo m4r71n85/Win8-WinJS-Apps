@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PoemEditor</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- PoemEditor references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+	<label for="poem-header">Poem Header</label><br />
+	<input type="text" id="poem-header" value="Header" /><br />
+	<label for="poem-lines">Verse</label>
+	<div id="poem-lines">
+		<input type="text" class="verse-line" value="asdasd" /><br />
+		<input type="text" class="verse-line" value="asdasd" /><br />
+		<input type="text" class="verse-line" value="asdasd" /><br />
+		<input type="text" class="verse-line" value="asdasd" /><br />
+		<button id="add-verse" disabled="disabled">Add verse</button>
+	</div>
+	<div id="poem">
+		<h2>Header</h2>
+	</div>
+
+	 <div id="appbar-id" data-win-control="WinJS.UI.AppBar" data-win-options="">
+        <button
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'cmdNew',label:'New poem',icon:'clearselection',
+                section:'global',tooltip:'New poem'}">
+        </button>
+		<button
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'cmdOpen',label:'Open poem',icon:'openfile',
+                section:'global',tooltip:'Open poem'}">
+        </button>
+        <button
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'cmdSave',label:'Save Poem',icon:'save',
+                section:'global',tooltip:'Save Poem'}">
+        </button>
+    </div>
+
+	<div id="confirm-cmdNew" data-win-control="WinJS.UI.Flyout" >
+        You will loose any unsaved changes!<br />
+		Are you sure you want to proceed?<br />
+		<div id="flyout-buttons">
+			<button id="proceed">Yes</button>
+			<button id="discard">No</button>
+		</div>
+    </div>
+</body>
+</html>
